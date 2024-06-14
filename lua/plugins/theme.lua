@@ -1,12 +1,16 @@
 return {
   -- add dracula
-  { "Mofiqul/dracula.nvim" },
+  {
+    'navarasu/onedark.nvim',
+    lazy = false,
+    priority = 1000
+  },
 
   -- Configure LazyVim to load dracula
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "dracula",
+      colorscheme = "onedark",
     },
   },
 }
